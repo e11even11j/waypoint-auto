@@ -292,16 +292,15 @@ em {
     background: var(--white);
     padding: 2rem;
     border-top: 1px solid var(--gray-200);
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all var(--transition-smooth);
+    z-index: 999;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-  
+
   .nav-links.open {
-    transform: translateY(0);
-    opacity: 1;
+    display: flex;
   }
-  
+
   .mobile-toggle {
     display: flex;
   }
